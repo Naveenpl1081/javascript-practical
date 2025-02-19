@@ -93,42 +93,58 @@
     // myQueue.Dequeue()
     // myQueue.print()
 
-    // class stackusingqueue{
-    //     constructor(){
-    //         this.q1=[]
-    //         this.q2=[]
+    // class StackUsingQueue {
+    //     constructor() {
+    //         this.q1 = [];
+    //         this.q2 = [];
     //     }
-        
-    //     push(data){
-    //         this.q1.push(data)
+    
+    //     push(data) {
+    //         this.q1.push(data);
     //     }
-    //     pop(){
-    //          if (this.q1.length === 0) {
-    //       return "Stack is empty";
-    //     }
-    //         while(this.q1.length>1){
-    //             this.q2.push(this.q1.shift())
+    
+    //     pop() {
+    //         if (this.q1.length === 0) {
+    //             return "Stack is empty";
     //         }
-    //         const val=this.q1.shift()
-       
-    //         [this.q1, this.q2] = [this.q2, this.q1]; // Swap the 
-    //         return val
-    //     }
-    //     print(){
-    //         for(let i=0;i<this.q1.length;i++){
-    //             console.log(this.q1[i])
+    
+    //         // Move elements from q1 to q2 except the last one
+    //         while (this.q1.length > 1) {
+    //             this.q2.push(this.q1.shift());
     //         }
+            
+    //         const val = this.q1.shift(); // Pop last element (stack behavior)
+    
+    //         // Swap q1 and q2
+    //         [this.q1, this.q2] = [this.q2, this.q1];
+    
+    //         return val;
+    //     }
+    //     top(){
+    //         return this.q1.length > 0 ? this.q1[0] : null;
+    //     }
+    
+    //     print() {
+    //         if (this.q1.length === 0) {
+    //             console.log("Stack is empty");
+    //             return;
+    //         }
+    //         console.log("Stack elements:", ...this.q1);
     //     }
     // }
     
-    // const sq=new stackusingqueue()
+    // // Usage
+    // const sq = new StackUsingQueue();
     
-    // sq.push(1)
-    // sq.push(2)
-    // sq.push(3)
-    // console.log(sq.pop())
+
+    // sq.push(1);
+    // sq.push(2);
+    // sq.push(3);
+    // console.log("top element is",sq.top())
+    // console.log("Popped:", sq.pop()); // Should return 3
     
-    // sq.print()
+    // sq.print(); // Should print 2 1
+    
 
 
     // class Stack{
@@ -204,14 +220,73 @@
     // console.log(isValid("{[]}"));   // Output: true
     
 
-    function min(n){
-        let stack=[]
-        let minn=[]
-        stack.push(n)
-        if(stack.length===0 || n<minn[minn.length-1]){
-            minn.push(n)
-        }
-        return min.pop()
-    }
-    const a=[2,4,6]
-    console.log(min(a))
+    // class Min{
+    //     constructor(){
+    //         this.stack=[]
+    //         this.minn=[]
+    //     }
+
+    //     push(data){
+    //         if(this.stack.length===0 || data<this.minn[this.minn.length-1]){
+    //             this.minn.push(data)
+    //         }
+    //         this.stack.push(data)
+    //     }
+       
+    //     getmin(){
+    //         if (this.minn.length === 0) return null;
+    //         return this.minn.pop()
+    //     }
+    // }
+    
+    // const stack=new Min()
+    // stack.push(5)
+    // stack.push(3)
+    // console.log(stack.getmin())
+
+
+
+// class Stack{
+//     constructor(data){
+//         this.stack=[]
+//     }
+//     push(data){
+//         this.stack.push(data)
+//     }
+//     pop(){
+//         if(this.stack.length===0){
+//             return "empty stack"
+//         }
+//         return this.stack.pop()
+//     }
+//     size(){
+//         return this.stack.length;
+//     }
+//     peek(){
+//         return this.stack[this.stack.length-1]
+//     }
+//     print(){
+//         for(let i=0;i<this.stack.length;i++){
+//             console.log(this.stack[i])
+//         }
+//     }
+// }
+
+// function isvalid(str){
+//     const stack=new Stack()
+//     const map={")":"(","}":"{","]":"["}
+//     for(let char of str){
+//         if(char in map){
+//             let top = stack.size() === 0 ? "#" : stack.pop();
+//             if(top!==map[char]){
+//                 return false
+//             }
+//         }else{
+//             stack.push(char)
+//         }
+//     }
+//     return stack.size()===0
+// }
+
+
+// console.log(isvalid("({})"))

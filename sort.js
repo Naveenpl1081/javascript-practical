@@ -127,5 +127,20 @@
 
 // console.log(mergeSort(a))
 
+//selection sort
 
-
+// function selectionsort(a){
+//     for(let i=0;i<a.length-1;i++){
+//         let min=i
+//         for(let j=i+1;j<a.length;j++){
+//             if(a[j]<a[min]){
+//                 min=j
+//             }
+//         }
+//         if(min!==i){
+//             [a[i],a[min]]=[a[min],a[i]]
+//         }
+//     }return a
+// }
+// const a=[1,4,3,7,2,3,0]
+// console.log(selectionsort(a))
