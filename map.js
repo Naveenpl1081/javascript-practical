@@ -19,7 +19,7 @@
 //     words.forEach(word => {
 //         mymap.set(word, (mymap.get(word) || 0) + 1)
 //     });
-//     console.log(mymap)
+    
 //   for(let [key, value] of mymap){
 //     if(value>=2){
 //         return key
