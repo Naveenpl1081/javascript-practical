@@ -898,7 +898,7 @@ console.log(sorted); // Output: [3, 5, 7, 8, 12]*/
 // find();
 
 
-// let 
+
 
 
 
@@ -2188,12 +2188,9 @@ console.log(sorted); // Output: [3, 5, 7, 8, 12]*/
 // console.log(reverse(a,a.length-1,[]))
 
 
-// const a=1213
+// const a=12132
 
 // function pali(a,left,right){
-
-
- 
   
 // if(left=>right){
 //   return true
@@ -2244,3 +2241,287 @@ console.log(sorted); // Output: [3, 5, 7, 8, 12]*/
 // }
 
 // console.log(removeEven(a))
+
+
+// const a=13
+
+// function prime(a){
+
+// for(let i=2;i<a;i++){
+//   if(a%i===0){
+//     return false
+//   }
+// }
+// return true
+
+// }
+// console.log(prime(a))
+
+
+
+// const a=[1,2,7,7,4,6,4]
+
+// function removezero(a){
+//   for(let i=0;i<a.length-1;i++){
+//       let unique=true;
+//       for(let j=0;j<a.length;j++){
+//           if(i==j){
+//               continue;
+//           }
+//           if(a[i]==a[j]){
+//               unique=false;
+//               break;
+//           }
+//       }
+//       if(unique){
+//           console.log(a[i])
+//       }
+//   }
+// }
+
+// removezero(a)
+
+// let a = 10;
+// let b = 20;
+
+// [a, b] = [b, a]; // Swaps a and b
+
+// console.log(a); // 20
+// console.log(b); // 10
+
+
+
+// const a=[1,2,3,4,5,6,7,8,9]
+// function sec(a){
+//     let max=-Infinity;
+//     let secmax=-Infinity;
+//     for(let i=0;i<a.length;i++){
+//         if(a[i]%2==0){
+//             if(max<a[i]){
+//                 secmax=max;
+//                 max=a[i]
+//             }else if(secmax<a[i]){
+//                 secmax=a[i]
+//             }
+//         }
+//     }
+//     return secmax
+// }
+
+// console.log(sec(a))
+
+
+// let a=10;
+// let prime;
+// for(let i=2;i<a;i++){
+//     prime=true;
+//     for(let j=2;j<i;j++){
+//       if(i%j == 0 ){
+//             prime=false
+//       }  
+//     }if(prime){
+//         console.log(i)
+//     }
+
+// }
+
+// const a=["naveen","hi","bum","naveeeen"]
+
+// function longest(a){
+//     let max=""
+//     for(let i=1;i<a.length;i++){
+//         if(a[i].length>max.length){
+//             max=a[i]
+//         }
+//     }
+//     return max
+// }
+// console.log(longest(a))
+
+// let a=[1,2,3,4,5,6,7,8,9]
+
+// let mid=Math.floor(a.length/2)
+// for(let i=a.length;i>=mid;i--){
+//     a[i]=a[i-1]
+//     if(i==mid){
+//         a[mid]=0
+//     }
+// }
+// while(0<mid){
+//     [a[mid],a[mid-1]]=[a[mid-1],a[mid]]
+//     mid--
+// }
+// console.log(a)
+
+
+// const str = "hello world";
+
+// function countVowels(str) {
+//     let count = 0;
+//     let vowels = "aeiouAEIOU"; // Define vowels manually
+
+//     for (let i = 0; i < str.length; i++) {  // Loop through each character
+//         for (let j = 0; j < vowels.length; j++) { // Compare with vowels manually
+//             if (str[i] === vowels[j]) {
+//                 count++; // Increment count if a vowel is found
+//                 break;   // Exit inner loop once a match is found (optimization)
+//             }
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(countVowels(str)); // Output: 3
+
+
+// function add(a,b,callback){
+//     let sum=a+b
+//     callback(sum)
+// }
+
+// function print(value){
+//     console.log(`${value}`)
+// }
+// add(1,2,print)
+
+
+// function hello(){
+//     let a=10;
+//     function hi(){
+//         console.log(a)
+//     }
+//     hi()
+// }
+// hello()
+
+
+
+// const a=[1,2,3,4,5,6,7,8,9]
+// function addZero(a){
+//     const mid=Math.floor(a.length/2)
+//     for(let i=a.length;i>0;i--){
+//         if(mid===i){
+//             a[mid]=0
+//             break;
+//         }
+//         a[i]=a[i-1]
+//     }
+//     for(let i=mid;i>0;i--){
+//         [a[i-1],a[i]]=[a[i],a[i-1]]
+//     }
+//     return a
+// }
+// console.log(addZero(a))
+
+// let str="hello world"
+// function findVowles(str){
+//     let vowels="aeiouAEIOU"
+//     let count=0;
+//     for(let i=0;i<str.length;i++){
+//         for(let j=0;j<vowels.length;j++){
+//             if(str[i]===vowels[j]){
+//                 count++
+//             }
+//         }
+//     }
+//     return count
+// }
+// console.log(findVowles(str))
+
+// let str="hello world"
+
+// function duplicates(str){
+//     let dup;
+//     let str1=""
+//     for(let i=0;i<str.length;i++){
+//         dup=false;
+//         for(let j=i+1;j<str.length;j++){
+//             if(str[i]==str[j]){
+//                 dup=true
+//             }
+//         }
+//         if(dup==false){
+//             str1+=str[i]
+//         }
+//     }
+//     return str1
+// }
+// console.log(duplicates(str))
+
+
+
+
+// let a=10 //11
+// let b=a++ //9
+// let c=--b//10
+// let d=++c//10
+// console.log(a,b,c,d)
+
+
+// const str="aveen"
+
+// function freq(str){
+//     let obj={}
+//     for(let i=0;i<str.length;i++){
+//         obj[str[i]]=(obj[str[i]] || 0)+1
+//     }
+//   for(let key in obj){
+//       if(obj[key]>1){
+//           return key
+//       }
+//   }
+// }
+
+// console.log(freq(str))
+
+
+// let x = 3;
+// console.log(++x + x++);
+// console.log(x);
+
+// let y = 7;
+// let z = y++ + ++y;
+// console.log(y, z);
+
+// let p = 5;
+// let q = p++ + ++p + p++;//5+7+7
+// console.log(p, q);//8 19
+
+
+// let a = 5, b;
+// b = a++ + ++a;
+// console.log(a, b);
+
+
+// const a=[1,2,3,4,5,6,0,7,8,9]
+
+// function find(a){
+//     for(let i=0;i<a.length;i++){
+//         if(a[i]===0){
+//           for(let j=i;j<a.length;j++){
+//               a[j]=a[j+1]
+//           }
+//           a.length=a.length-1
+//         }
+        
+//     }return a
+// }
+// console.log(find(a))
+
+
+
+
+// const str="naveen"
+// function findvowels(str){
+//     let count=0;
+//     let vowels="aeiouAEIOU"
+//     for(let i=0;i<str.length;i++){
+//         for(let j=0;j<vowels.length;j++){
+//             if(str[i]===vowels[j]){
+//                 count++
+//             }
+//         }
+//     }
+//     return count
+// }
+// console.log(findvowels(str))

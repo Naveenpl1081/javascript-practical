@@ -290,3 +290,105 @@
 
 
 // console.log(isvalid("({})"))
+
+
+
+
+// function validparam(a){
+    //     const map={"}":"{",")":"(","]":"["}
+    //     let stack=[]
+    //     for(let i=0;i<a.length;i++){
+    //         if(a[i] in map){
+    //             total=stack.length===0?"#":stack.pop()
+    //             if(total!==map[a[i]]){
+    //                 return false
+    //             }
+    //         }else{
+    //           stack.push(a[i])  
+    //         }
+    //     }
+    //     return stack.length===0
+    // }
+    
+    // const a="({{}}))"
+    // console.log(validparam(a))
+
+//linked queue
+    // class Queue {
+    //     constructor(size) {
+    //         this.queue = [];
+    //         this.size = size;
+    //     }
+    
+    //     enqueue(value) {
+    //         if (this.queue.length < this.size) {
+    //             this.queue.push(value);
+    //         } else {
+    //             console.log("Queue is full!");
+    //         }
+    //     }
+    
+    //     dequeue() {
+    //         if (this.queue.length > 0) {
+    //             return this.queue.shift();
+    //         } else {
+    //             console.log("Queue is empty!");
+    //         }
+    //     }
+    
+    //     front() {
+    //         return this.queue.length > 0 ? this.queue[0] : null;
+    //     }
+    
+    //     isEmpty() {
+    //         return this.queue.length === 0;
+    //     }
+    // }
+    
+    // const q = new Queue(5);
+    // q.enqueue(10);
+    // q.enqueue(20);
+    // console.log(q.dequeue()); // 10
+    // console.log(q.front());   // 20
+    
+
+    //linked stack
+
+    //  class Node{
+        //     constructor(data){
+        //         this.data=data
+        //         this.next=null
+        //     }
+        // }
+        
+        // class stack{
+        //     constructor(){
+        //         this.top=null
+        //     }
+            
+        //     push(data){
+        //         const newNode=new Node(data)
+        //         newNode.next=this.top
+        //         this.top=newNode
+        //     }
+        //     pop(){
+        //         this.top=this.top.next
+        //     }
+        //     print(){
+        //         let current=this.top
+        //         while(current){
+        //             process.stdout.write(current.data+"->")
+        //             current=current.next
+        //         }
+        //         console.log(null)
+        //     }
+        // }
+        
+        // const node=new stack()
+        // node.push(1)
+        // node.push(2)
+        // node.print()
+
+
+
+        

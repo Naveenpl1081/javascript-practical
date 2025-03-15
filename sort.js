@@ -283,3 +283,28 @@
 //best case-o(n logn)
 //average case-o(n logn)
 //worst case-o(n logn)
+
+
+//-----------------------------------------------
+// const a=[5,4,1,8,0,5,3,7,6]
+// function selectionSort(a){
+//     for(let i=0;i<a.length-1;i++){
+//         let min=i
+//         for(let j=i+1;j<a.length;j++){
+//             if(a[j]<a[min]){
+//                 min=j
+//             }
+//         }
+//         if(min!==i){
+//            [a[min],a[i]]=[a[i],a[min]]
+//         }
+//     }
+//     return a
+// }
+// console.log(selectionSort(a))
+
+//best case-o(n2)
+//average case-o(n2)
+//worst case-o(n2)
+
+
